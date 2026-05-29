@@ -1,0 +1,109 @@
+ <!-- Day-2 : HTML Forms, Tables, Semantic Tags, Build Student Registration Forms -->
+       <!dOCTYPE html>
+     <html lang="en">
+     <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <header>
+        <h1>Student Registration Form</h1>
+    </header>
+    <section>
+        <form action="#" method="get">
+            <div>
+                <label for="fullname">Full Name</label><br>
+                <input type="text" required  id="fullname" name="fullname" placeholder="Enter Name" required>
+            </div>
+            <div>
+                <label for="rollno">Roll Number</label><br>
+                <input type="text" required id="rollno" name="rollno" placeholder="Enter Roll Number" required>
+            </div>
+            <div>
+                <label for="dob">Date of Birth</label><br>
+                <input type="date"required id="dob" name="dob" required>
+            </div>
+            <div>
+                <label>Gender</label>
+                <div class="gender">
+                    <input type="radio" required id="male" name="gender">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter Email" required>
+            </div>
+            <div>
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password" placeholder="Enter Password" required>
+            </div>
+            <button type="submit" onclick="check()">Register</button>
+        </form>
+    </section>
+    <script>
+        function check(){
+            alert("Registration Done Successfully ");
+        }
+    </script>
+</body>
+<style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        header{
+            text-align: center;
+            margin-top: 20px;
+        }
+        section{
+            width: 500px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 30px;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label{
+            font-weight: bold;
+        }
+
+        input{
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .gender{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        button{
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: darkblue;
+        }
+
+    </style>
+</html>
