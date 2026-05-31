@@ -1,22 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css/style3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio UI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
 
-<div class="container">
+<body class="bg-gray-100">
 
-    <img src="image/Blackman.png" alt="Profile" height="150px" width="200">
 
-    <h1>Rahul Kuamr</h1>
+    <!-- Hero Section -->
+    <section class="text-center py-4 bg-white ">
 
-    <p>Frontend Web Developer</p>
+        <h1 class="text-4xl font-bold mt-6g b">
+            BINOD KUMAR PRADHAN
+        </h1>
 
-    <button>Contact Me</button>
+        <p class="text-gray-600 text-lg mt-2">
+            FrontEnd Web Developer
+        </p>
 
-</div>
+        <button
+            class="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-800">
+            Hire Me
+        </button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto py-12 px-6">
+        <h2 class="text-3xl font-bold text-center mb-6">
+            About Me
+        </h2>
+
+        <p class="text-center text-gray-700 max-w-3xl mx-auto">
+            I am a passionate Front-End Developer with experience in
+            HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, and React.
+            I enjoy building responsive and user-friendly websites .
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-white py-12">
+        <h2 class="text-3xl font-bold text-center mb-8">
+            My Skills
+        </h2>
+
+        <div class="container mx-auto grid md:grid-cols-4 gap-6 px-6">
+
+            <div class="bg-blue-100 p-6 rounded-lg text-center shadow">
+                HTML5
+            </div>
+
+            <div class="bg-blue-100 p-6 rounded-lg text-center shadow">
+                CSS3
+            </div>
+
+            <div class="bg-blue-100 p-6 rounded-lg text-center shadow">
+                JavaScript
+            </div>
+
+            <div class="bg-blue-100 p-6 rounded-lg text-center shadow">
+                Tailwind CSS
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container mx-auto py-12 px-6">
+
+        <h2 class="text-3xl font-bold text-center mb-8">
+            Projects
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="text-xl font-bold mb-3">
+                    Portfolio Website
+                </h3>
+
+                <p class="text-gray-600">
+                    Personal responsive portfolio using HTML, CSS,
+                    and Tailwind CSS.
+                </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="text-xl font-bold mb-3">
+                    Student Registration System
+                </h3>
+
+                <p class="text-gray-600">
+                    Registration form with validation and responsive design.
+                </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="text-xl font-bold mb-3">
+                    Landing Page
+                </h3>
+
+                <p class="text-gray-600">
+                    Modern responsive landing page using Tailwind CSS.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-blue-600 text-white py-12">
+
+        <h2 class="text-3xl font-bold text-center mb-6">
+            Contact Me
+        </h2>
+
+        <div class="text-center">
+
+            <p>Email: johndoe@gmail.com</p>
+
+            <p class="mt-2">Phone: +91 9876543210</p>
+
+            <button
+                class="mt-6 bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">
+                Send Message
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center p-4">
+        <p>© 2026 John Doe | All Rights Reserved</p>
+    </footer>
 
 </body>
+
 </html>
