@@ -2,21 +2,18 @@ body{
     margin:0;
     font-family: Arial;
 }
-
 header{
     background:rgb(22, 58, 204);
     color:white;
     padding:20px;
     text-align:center;
 }
-
 .hero{
     display:flex;
     justify-content:space-around;
     padding:40px;
     gap:20px;
 }
-
 .card{
     background:rgb(47, 176, 220);
     padding:50px;
