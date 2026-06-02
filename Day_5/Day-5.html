@@ -3,60 +3,100 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Responsive Website</title>
-<script src="script.js"></script>
+<title>Responsive Mobile First Website</title>
 <link rel="stylesheet" href="style5.css">
 </head>
 <body>
 <header>
-    <div class="navbar">
-        <div class="logo" ><p style="font-family: Arial, Helvetica, sans-serif;">Rahul</p></div>
-        <div class="menu-btn" onclick="toggleMenu()">
+    <!-- nav start -->
+    <nav class="navbar">
+        <div class="logo">
+            WebDev
+        </div>
+        <div class="menu-btn" id="menuBtn">
             ☰
         </div>
         <div class="nav-links" id="navMenu">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<!-- HERO start  -->
+<section class="hero" id="home">
+<div class="hero-content">
+        <h1 class="glow-text">
+            Rahul Portfolio
+        </h1>
+        <p>
+            Modern Responsive Websites with
+            Beautiful UI & Smooth Animations
+        </p>
+        <div class="hero-buttons">
+            <button class="btn neon-btn">
+                Get Started
+            </button>
+            <button class="btn outline-btn">
+                Learn More
+            </button>
         </div>
     </div>
-</header>
-<section class="hero">
-    <h1>Responsive Mobile First Website</h1>
-    <p>
-        Build modern websites that look great on mobile,
-        tablet, and desktop devices.
-    </p>
-    <button class="btn">
-        Get Started
-    </button>
 </section>
-<section class="services">
+<!-- ABOUT start  -->
+<section class="about reveal" id="about">
+    <h2>About Us</h2>
+    <p>
+        We create beautiful responsive websites,
+        web applications and digital experiences
+        that help businesses grow online.
+    </p>
+</section>
+<!-- SERVICES  start -->
+
+<section class="services reveal" id="services">
     <h2>Our Services</h2>
     <div class="card-container">
         <div class="card">
             <h3>Web Design</h3>
             <p>
-                Beautiful and responsive website designs.
+                Beautiful and responsive website
+                designs for all devices.
             </p>
         </div>
         <div class="card">
             <h3>Development</h3>
             <p>
-                Fast and scalable web applications.
+                Fast and scalable web applications
+                built using modern technologies.
             </p>
         </div>
         <div class="card">
             <h3>Digital Marketing</h3>
             <p>
-                Grow your business online effectively.
+                Grow your business online and
+                increase customer engagement.
             </p>
         </div>
     </div>
 </section>
-<footer>
-    <p> All Rights Reserved </p>
-</footer>
+
+<!-- CONTACT  start  -->
+
+<section class="contact reveal" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name">
+
+        <input type="email" placeholder="Email Address">
+
+        <textarea placeholder="Message"></textarea>
+        <button type="submit" class="btn">
+            Send Message
+        </button>
+    </form>
+</section>
 </body>
 </html>
