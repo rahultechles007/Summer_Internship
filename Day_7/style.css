@@ -1,0 +1,27 @@
+body {
+  background: #f4f6f9;
+}
+
+/* HERO SECTION */
+.hero {
+  background: linear-gradient(120deg, #1e3c72, #2a5298);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* CARD HOVER EFFECT */
+.card:hover {
+  transform: translateY(-10px);
+  transition: 0.3s;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+footer {
+  background: #212529;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}

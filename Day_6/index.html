@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title><Data>DOCUMENT</Data></title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>UI Project</header>
+<!-- BUTTON 1  START-->
+<div class="topbar">
+  <button class="btn" onclick="toggleMode()">Dark / Light Mode</button>
+  <button class="btn" onclick="scrollDown()">Scroll Down</button>
+  <button class="btn" onclick="increaseCounter()">Click Counter: <span id="count">0</span></button>
+</div>
+<!-- BUTTON 1 END-->
+<!-- BUTTON  2 START-->
+<div class="container">
+  <div class="card" onclick="openPopup('Card 1 Clicked')">Card 1</div>
+  <div class="card" onclick="openPopup('Card 2 Clicked')">Card 2</div>
+  <div class="card" onclick="openPopup('Card 3 Clicked')">Card 3</div>
+</div>
+<!-- BUTTON 2 END-->
+<div class="loader"></div>
+<!-- BUTTON START-->
+<div class="fade-text">
+  This is an advanced animated UI using CSS + JavaScript.
+</div>
+</div>
+<!-- BUTTON END-->
+
+
+<div class="popup" id="popup"></div>
+</body>
+<script src="script.js"></script>
+</html>
